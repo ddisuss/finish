@@ -1,0 +1,158 @@
+body { 
+  background-image: url('https://phonoteka.org/uploads/posts/2021-04/1618570103_15-phonoteka_org-p-krasnoe-derevo-fon-23.jpg'); /* Путь к изображению фона */ 
+  background-repeat: no-repeat; /* Отключение повторения изображения */ 
+  background-size: fixed; /* Масштабирование изображения фона */ 
+  /* Дополнительные свойства фона, если необходимо */ 
+} 
+
+body {
+    background-color: #520101;
+  }
+
+  .salam { 
+    font-family: 'Anton', sans-serif; 
+    /* margin-top: 200px;  */
+    font-weight: bold;
+    text-align: center; 
+    color: rgb(255, 123, 0); 
+ 
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+.navMenu {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: #ff0000;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #fddb3a;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: inline-block;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 20px;
+  background-color: rgb(231, 97, 97);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card button {
+  padding: 5px 10px;
+  background-color: #8a0202;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.card button:hover {
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+#fullscreen-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fullscreen-image {
+  max-width: 90%;
+  max-height: 90%;
+}

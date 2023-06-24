@@ -1,0 +1,194 @@
+body { 
+    background-image: url('https://storge.pic2.me/upload/443/j8xvqfity3vq.jpg'); /* Путь к изображению фона */ 
+    background-repeat: no-repeat; /* Отключение повторения изображения */ 
+    background-size: fixed; /* Масштабирование изображения фона */ 
+    /* Дополнительные свойства фона, если необходимо */ 
+} 
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+.navMenu {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: #ff0000;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #fddb3a;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.salam { 
+    font-family: 'Anton', sans-serif; 
+    margin-top: 200px; 
+    font-weight: bold;
+    text-align: center; 
+    color: rgb(255, 123, 0); 
+ 
+} 
+ 
+.argument {
+  color: rgb(243, 198, 198);
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+
+.chasha {
+  margin-top: -200px;
+  margin-left: -100px; 
+ z-index: 5;
+  }
+  
+  .marquee-container {
+    width: 100%;
+    overflow: hidden;
+    z-index: 3;
+  }
+  .moloko{
+    width: 1080px;
+  }
+  .marquee-line {
+    display: flex;
+  }
+  
+  .marquee-content {
+    position: relative;
+  animation: marquee 20s linear infinite;
+  white-space: nowrap;
+  z-index: 2;
+    font-family: 'Anton', sans-serif;
+    flex-direction: column;
+    z-index: 4;
+  }
+  
+  .marquee-text {
+    color: rgb(255, 0, 0);
+    display: inline-block;
+    animation: marquee-text 20s linear infinite;
+    padding-left: 100%;
+    font-size: 36px; /* Увеличенный размер текста */
+    position: relative; /* Добавляем position: relative; для текста */
+    z-index: 2;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-300%); }
+  }
+  
+  @keyframes marquee-text {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+   
+ 
+
+.custom-carousel {
+  width: 1200px;
+  height: 300px;
+}
+
+body {
+  background-color: #520101;
+}
+
+
+.zerno {
+  position: absolute;
+ width: 300px;
+ height: 300px;
+
+ 
+}
+
+.zerno1 {
+position: relative;
+  width: 300px;
+  height: 300px;
+  top: -300px;
+  transform: rotate(45deg);
+}
+
+.zerno3 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  top: -450px;
+  margin-left: 1600px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
